@@ -1,7 +1,16 @@
-// Fundamentos Sintaxe Básica da Linguagem
+/**
+ *  Fundamentos 
+ * Sintaxe Básica da Linguagem
+ * @Author Vanildo Lima 
+ */
+
+
+
+// importação de pacotes
+const colors = require('colors')
 
 // Sentenças
-console.log ("Hello World!")
+console.log ("Hello World!".green)
 console.log ('Hello World!')
 
 // Blocos
