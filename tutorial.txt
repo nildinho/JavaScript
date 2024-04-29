@@ -98,3 +98,12 @@ valor = (x * y) / 100
 
 Saída:
 valor
+
+----------------------------------------------
+Funções:
+Função é um bloco de código reutilizável
+Função Simples:
+
+function nome() {
+    
+}
