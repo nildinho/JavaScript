@@ -6,6 +6,11 @@ function calcularMedia() {
 
     var media = (nota1 + nota2 + nota3 + nota4) / 4;
 
+    if (isNaN(media)) {
+        document.getElementById('resultado').textContent = "Insira todas as notas.";
+        return;
+    }
+
     if (media < 4) {
         document.getElementById('resultado').textContent = "Reprovado - Média: " + media.toFixed(2);
     } else if (media >= 4 && media < 7) {
