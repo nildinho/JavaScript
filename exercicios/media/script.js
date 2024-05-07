@@ -4,7 +4,7 @@ function calcularMedia() {
     let nota3 = parseFloat(document.getElementById('terceiranota').value);
     let nota4 = parseFloat(document.getElementById('quartanota').value);
 
-    var media = (nota1 + nota2 + nota3 + nota4) / 4;
+    let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
     if (media < 4) {
         document.getElementById('resultado').textContent = "Reprovado - Média: " + media.toFixed(2);
