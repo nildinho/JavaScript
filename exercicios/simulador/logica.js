@@ -74,8 +74,3 @@ function simular(valor) {
 
     }
 }
-
-function calcularMedia() {
-    
-
-}
