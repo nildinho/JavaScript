@@ -104,6 +104,24 @@ Funções:
 Função é um bloco de código reutilizável
 Função Simples:
 
-function nome() {
-    
+function nome() {   
+    return
 }
+
+Funções anônimas
+const nome = function () {
+
+}
+
+let nome = function () {
+        
+}
+
+Funções em JavaScript moderno pode ser simplificadas
+
+_______________________________________________________
+obs:
+typeof //verifica a tipagem dinâmica
+primitivos (string, number e boolean)
+function
+object

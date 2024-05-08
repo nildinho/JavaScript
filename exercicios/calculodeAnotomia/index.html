@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Autonomia de Veículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Autonomia de Veículo</h1>
+        <form id="calc-form">
+            <label for="tank-capacity">Capacidade do Tanque (em litros):</label>
+            <input type="number" id="tank-capacity" required>
+            <label for="fuel-consumption">Consumo Médio (km/l):</label>
+            <input type="number" id="fuel-consumption" required>
+            <label for="current-fuel">Quantidade Atual de Combustível (em litros):</label>
+            <input type="number" id="current-fuel" required>
+            <button type="submit">Calcular Autonomia</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
