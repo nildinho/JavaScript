@@ -1,8 +1,8 @@
 function calcularMedia() {
-    let nota1 = parseFloat(document.getElementById('primeiranota').value);
-    let nota2 = parseFloat(document.getElementById('segundanota').value);
-    let nota3 = parseFloat(document.getElementById('terceiranota').value);
-    let nota4 = parseFloat(document.getElementById('quartanota').value);
+    let nota1 = Number(document.getElementById('primeiranota').value);
+    let nota2 = Number(document.getElementById('segundanota').value);
+    let nota3 = Number(document.getElementById('terceiranota').value);
+    let nota4 = Number (document.getElementById('quartanota').value);
 
     let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
