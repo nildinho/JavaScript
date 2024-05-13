@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Autonomia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./carros.png">
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de Autonomia de Veículo</h1>
-        <form id="calc-form" onsubmit="return false;">
+        <form id="calc-form"> </form>
             <div class="input-group">
                 <label for="km-percorridos">Quilômetros Percorridos:</label>
                 <input type="number" id="km-percorridos" required>
             </div>
             <div class="input-group">
-                <label for="combustivel-atual">Quantidade Atual de Combustível (em litros):</label>
+                <label for="combustivel-atual">Quantidade de Combustível Rebastecido(em litros):</label>
                 <input type="number" id="combustivel-atual" required>
             </div>
             <button onclick="calcularAutonomia()">Calcular Autonomia</button>
