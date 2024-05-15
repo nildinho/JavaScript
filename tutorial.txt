@@ -125,3 +125,19 @@ typeof //verifica a tipagem dinâmica
 primitivos (string, number e boolean)
 function
 object
+
+_______________________________________________________
+POO -  Programação Orientada a Objetos
+Pilares: 
+- Abstração
+- Herança
+- Polimorfiamo
+- Encapsulamento
+
+Toda Classe modelo inicia com a letra maiúscula
+
+new(IMPORTANTE!) indica a criação de um Objetos
+this(IMPORTANTE) quando se refere a ele mesmo
+super -> indica o uso de atributos da classe pai
+polimorfismo é a mudança do compotamento de um método mais existente. 
+*** Atenção O pormorfismo não cria o método, ele apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do método da classe pai.
