@@ -1,0 +1,37 @@
+function calcularCalorias() {
+    let idade = Number(document.getElementById('idade').value);
+    let altura = Number(document.getElementById('altura').value);
+    let peso = Number(document.getElementById('peso').value);
+    let macho = document.getElementById('macho').checked;
+    let femea = document.getElementById('femea').checked;
+    let atividades = document.getElementById('atividades').value;
+
+    let get;
+    if (macho) {
+        get = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
+    } else if (femea) {
+        get = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade);
+    }
+
+    let fatores = {
+        'sedentario': 1.1505,
+        'leve': 1.3166,
+        'moderado': 1.403,
+        'ativo': 1.4845,
+        'muitoativo': 1.9,
+        'extraativo': 2.0
+    };
+
+    let calorias = get * fatores[atividades];
+    document.getElementById('resultadofinal').value = calorias.toFixed(0) + " kcal";
+}
+
+function limpar() {
+    document.getElementById('idade').value = "";
+    document.getElementById('altura').value = "";
+    document.getElementById('peso').value = "";
+    document.getElementById('macho').checked = false;
+    document.getElementById('femea').checked = false;
+    document.getElementById('atividades').selectedIndex = 0;
+    document.getElementById('resultadofinal').value = "";
+}
