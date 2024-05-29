@@ -1,0 +1,28 @@
+/**
+* slides
+* @author Vanildo Lima
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.Container {
+    max-width: 1040px;
+    margin: 0 auto; 
+}
+
+/* efeito fade */
+#slide.Fadeout {
+    opacity: 0.1;
+
+}
+#slide {
+    transition: opacity 2s;
+    opacity: 1;
+}

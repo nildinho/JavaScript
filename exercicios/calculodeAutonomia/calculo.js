@@ -1,15 +1,25 @@
+/**
+ * calculadora autonomia de carro
+ * @author Vanildo Lima
+ * 
+ */
+
+let capacidade, tanque 
 function calcularAutonomia() {
-    let inputKmPercorridos = document.getElementById('km-percorridos');
-    let inputCombustivelAtual = document.getElementById('combustivel-atual');
-    let Resultado = document.getElementById('resultado');
-    let Consumo = document.getElementById('consumo');
+    var capacidadeTanque = parseFloat(document.getElementById('capacidadeTanque').value);
+    var consumoMedio = parseFloat(document.getElementById('consumoMedio').value);
 
-    let kmPercorridos = Number(inputKmPercorridos.value);
-    let combustivelAtual = Number(inputCombustivelAtual.value);
+    if (isNaN(capacidadeTanque) || isNaN(consumoMedio)) {
+        alert("Por favor, insira valores válidos.");
+        return;
+    }
 
-    let autonomia = kmPercorridos / combustivelAtual;
-    let consumo = combustivelAtual / kmPercorridos;
+    var autonomia = capacidadeTanque * consumoMedio;
+    document.getElementById('resultado').innerHTML = "Autonomia: " + autonomia.toFixed(2) + " km";
+}
 
-    Resultado.textContent = `A autonomia do veículo é de aproximadamente ${autonomia.toFixed(2)} Km/l`;
-    Consumo.textContent = `O veículo gasta aproximadamente ${consumo.toFixed(2)} litros por quilômetro.`;
+function limparCampos() {
+    document.getElementById('capacidadeTanque').value = "";
+    document.getElementById('consumoMedio').value = "";
+    document.getElementById('resultado').innerHTML = "";
 }

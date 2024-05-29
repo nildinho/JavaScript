@@ -132,7 +132,7 @@ Pilares:
 - Abstração
 - Herança
 - Polimorfiamo
-- Encapsulamento
+- Encapsulamento (Segurança)
 
 Toda Classe modelo inicia com a letra maiúscula
 
@@ -141,3 +141,111 @@ this(IMPORTANTE) quando se refere a ele mesmo
 super -> indica o uso de atributos da classe pai
 polimorfismo é a mudança do compotamento de um método mais existente. 
 *** Atenção O pormorfismo não cria o método, ele apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do método da classe pai.
+
+DICA:
+class Classe {} //cria uma classe modelo
+- o nome da classe sempre deve começar com uma letra maiúscula
+- Classe(biologia)
+- objeto (new) (Substantivo)
+- atributos (variáveis) (adjetivos)
+- ações(metodos/funções) (verbos)
+
+Encapsulamento
+1) proteger a variável criando um modificador privado (acesso exclusivo da calsse ao qual pertence)
+2) Criar uma função para obter o conteúdo da variável (get)
+3) Criar uma função para gravar um dado na variável (set)
+
+no JavaScript usamos _ antes da variável para encapsular
+
+----------------------------------------------------------------------
+no JavaScript objetos podem ser criados sem uma classe de modelo
+estruturas de dados usando objetos
+Exemplos:
+- package.json
+- coleção do banco de dados (MongoDB)
+
+ATENÇÃO !!
+tipos no JavaScript
+- string
+- number
+- boolean
+- function
+- object
+
+aula 6 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Array (vetor)
+Array multidimensional (matriz)
+-É uma forma especial de trabalhar com variáveis
+- Índice [0] [1]
+- na linguagem JS array é um objeto
+
+ATENÇÃO!!!
+cuidado ao manipular os dados e alterar o índice do array
+Mais Seguro:
+Push() - Método usado para adicionar ao final do Array
+pop() - excluir o último registro de Array
+delete -  excluir um dado sem alterar o índice
+
+Percorrendo um array
+1) for forEach
+2) map() //  percorre o array, faz algo e gera outro array com o resultado
+
+Um array também pode ser criado como um objeto
+let nome = []
+let nome = new Array()
+
+Um array pode ser criado com um estrutura de dados, junto com
+objetos e podem ser usados filtros para a manipulação de dados.
+
+Atenção
+Sempre criar uma cópia do array(para exibição).
+_______________________________________________________
+DOM - document object modelo
+É uma técnica para ientificar elementos HTML (tags) que 
+serão manipulados pelo css ou js 
+é uma forma de trabalhar objetos com HTML
+a técnica consiste em atribuir um id de elemento
+
+setTimeout(()=>{},1000) Usado para executar uma funçaõ a infinitamente a cada 
+determinado tempo (milisegundos)
+
+O JavaScript é capaz  de adicionar ou remover uma classe css ao documento HTML usando o id do elemento
+
+_______________________________________________________
+
+plataforma node
+Observação: Ao clonar um repositório ou trabalhar em um outro PC, é necessario reinstalar as bibliotecas presentes nas depedencas do paskage.json
+npm install(digitar a raiz do projeto)
+
+----------------------------------------------------------------------------------------
+Assincronismo:
+Métodos e funções que permitem ao JS trabalhar multitarefas
+
+- Banco de dados 
+- acesso a URLs (serviços de nuvem, web services, apis, etc)
+- acesso ao disco(HD, SSD etc) do equipamento
+
+promise("promessa")
+1) a resposta a requisição pode ou nao dar certo 
+
+sintaxe: 
+return new Promise((resolve, reject) => {})
+// resolve - ok
+// reject - erro
+
+// Quando trabalhamos com promises, devemos usar a estrutura abaixo para obter o retorno da função
+.then(() => {})
+.catch(() => {})
+
+obs: é possivel usar mais de um .then para trabalhar diferentes tipos de resposta
+
+async-await
+(forma mais moderna e simples de trabalhar Assincronismo)
+
+Para Trabalhar com async e await devemos usar funções, senid que ao usar o async é Obrigatório o uso de await
+Neste caso usamos dentro da função o truy catch para tratamento de exceções
+ try {
+
+    } catch (error) {
+        
+    }
