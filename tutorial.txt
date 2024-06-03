@@ -249,3 +249,5 @@ Neste caso usamos dentro da função o truy catch para tratamento de exceções
     } catch (error) {
         
     }
+
+    
